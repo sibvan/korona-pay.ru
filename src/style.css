@@ -1,0 +1,154 @@
+/* common  */
+@import 'reset-css';
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wdth,wght@62.5..100,100..900&display=swap");
+
+body {
+  font-family: "Noto Sans Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background: #0d0c0f;
+  color: #fff;
+}
+
+#app {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+  box-sizing: border-box;
+  gap: 24px;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.2s;
+}
+
+a:hover {
+  text-decoration-color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, 1);
+}
+
+/* common */
+
+/* footer */
+
+.footer {
+  font-family: "Noto Sans Mono";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.footer__text {
+  display: inline;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* footer */
+
+/* header */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* header */
+
+/* logo */
+.logo {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 100%;
+}
+
+.logo__top {
+  color: #d0f348;
+}
+
+.logo__btm {
+  color: #a282f3;
+}
+/* logo */
+
+/* copyright */
+.copyright {
+  font-family: "Noto Sans Mono";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 0.5);
+}
+/* copyright */
+
+/* form */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  height: min(calc(100dvh / 5), calc(100vw / 5));
+  width: 100%;
+  font-size: min(calc(100dvh / 5), calc(100vw / 5));
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+
+  font-family: "Noto Sans Mono";
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.form__input:focus {
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+     outline: none;
+}
+
+.form__label::before {
+  font-size: min(calc(100dvh / 5), calc(100vw / 5));
+  color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.form__rub::before {
+  content: "руб.";
+}
+
+.form__lari::before {
+  content: "лари";
+}
+
+.form__rate::before {
+  content: "курс";
+}
+
+.form__section {
+  position: relative;
+}
+
+@media (orientation: portrait) {
+  .form__rub::before {
+    content: "₽";
+  }
+
+  .form__lari::before {
+    content: "₾";
+  }
+
+  .form__rate::before {
+    content: "↕";
+  }
+}
+/* form */

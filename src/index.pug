@@ -1,0 +1,22 @@
+header.header
+  div.header__logo.logo
+    p.logo__top Korona
+    p.logo__btm pay.ru
+  div.header__copyright.copyright
+    p.copyright__text Created by
+    a.copyright__link(href="https://sibvan.dev" target="_blank") sibvan.dev
+main.main
+  form.form
+    div.form__section
+      label.form__rub.form__label
+        input.form__input(type="text" inputmode="decimal" data-js-ruble)
+    div.form__section
+      label.form__lari.form__label
+        input.form__input(type="text" inputmode="decimal" data-js-lari)
+    div.form__section
+      label.form__rate.form__label
+        input.form__input(type="text" inputmode="decimal" data-js-rate)
+footer.footer
+  div.footer__inner
+    p.footer__text Этот мини-калькулятор предназначен для расчёта комиссии при переводе денег с помощью сервиса 
+    a.footer__link(href = "https://koronapay.com/transfers/" target="_blank") Korona
